@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),#009688),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.logo{
+    height: 60px;
+    position:absolute;
+    top: 25px;
+    left: 100px;
+}
+
+.menu img{
+    width: 30px;
+}
+
+.menu{
+    position:absolute;
+    right: 40px;
+    top: 30px;
+    background-color: #009688;
+    padding: 12px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.mainTitel{
+    text-align: center;
+    padding-top: 160px ;
+    color: white;
+}
+
+.mainTitel h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script';
+}
+
+.mainTitel p{
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.btn a{
+    display: inline-block;
+    width: 140px;
+    color: #fff;
+    border: 0.5px solid white;
+    padding: 8px 0;
+    text-decoration: none;
+    margin: 0 5px;
+    position: relative;
+    transition: 1s;
+    z-index: 1;
+}
+
+.btn a span{
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: -1;
+}
+
+.btn a:hover span{
+    width: 100%;
+}
+
+.btn a:hover{
+    color: black;
+}
+
+.nav_bar{
+    height: 100vh;
+    width: 250px;
+    background-color: #009688;
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding-top: 100px; 
+    padding-left: 50px;  
+}
+
+.nav_bar ul{
+    list-style-type: none;
+}
+
+.nav_bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav_bar ul li{
+    margin-top: 20px;
+}
+
+.main{
+    z-index: -2;
+}
+
+/* About start here */
+
+.titel{
+    text-align: center;
+}
+
+.heading{
+    font-size: 50px;
+    padding: 70px 0;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.child{
+    flex-basis: 50%;
+}
+
+.about-text p{
+    text-align: left;
+}
+
+.fas{
+    font-size: 30px;
+    color: #009688;
+    border: 2px solid #009688;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.about-small-title{
+    color: #009688;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.small-text{
+    font-size: 17px;
+}
+
+/* our servises start here */
+
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.images{
+    flex-basis: 49%;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.images img{
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+
+.images:hover .overlay{
+    opacity: 1;
+}
+
+.hover-text{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    width: 80%;
+    left: 10%;
+    color: white;
+    font-family: cursive;
+    transition: 1s;
+}
+
+.images:hover .hover-text{
+    bottom: 35%;
+    opacity: 1;
+}
+
+/* testimonials start here */
+
+.comment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.comments{
+    flex-basis: 32%;
+    position: relative;
+    padding: 5px;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+.comments img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.heading-2{
+    display: inline;
+    margin-left: 10px;
+}
+
+.fab{
+    margin-left: 8px ;
+    color:#27c0ff;
+    font-size: 22px;
+}
+
+.user-name{
+    position:absolute;
+    top: 45px;
+    left: 80px;
+    font-size: 14px;
+    color:#27c0ff;
+}
+
+.comments:hover{
+    transform: translatey(-10px);
+}
+
+/* Footer start here*/
+
+.footer{
+    background-color: #efefef;
+    padding: 30px 0;
+    margin-top: 100px;
+    height: 500px;
+    position: relative;
+}
+
+.fo{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #009688;
+    margin-top: 5px;
+}
+
+.div-4{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.div-4 h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: kaushan script;
+    font-weight: 600;
+}
+
+.foo{
+    border: none;
+    font-size: 20px;
+}
+
+.footer-img img{
+    position: absolute;
+    top: 12px;
+    left: 33%;
+    height: 400px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.socila{
+    display: flex;
+    flex-direction: row;
+}
+.last{
+    font-size: 30px;
+    margin-left: 15px;
+    transition: 1s;
+}
+
+.social .last:hover{
+    transform: translatey(-7px);
+}
